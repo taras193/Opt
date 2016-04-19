@@ -35,7 +35,22 @@ $('.btn_zz').click(function(e) {
     e.preventDefault();
     $('#pop').arcticmodal();
   });
+$('.toggle').click(function(e) {
+    e.preventDefault();
+    
+    if($(this).attr('data-page') == "0"){
 
+      $(this).attr('data-page','1')
+      $('.sec3 .content[data-pagek="1"]').removeClass('rob');
+      $('.sec3 .content[data-pagek="0"]').addClass('rob');
+
+     }
+       else{
+        $(this).attr('data-page','0')
+        $('.sec3 .content[data-pagek="0"]').removeClass('rob');
+        $('.sec3 .content[data-pagek="1"]').addClass('rob');
+      }
+  });
 
 
 function getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;} 
@@ -88,4 +103,36 @@ $(window).load(function(){
 
   initalize();
 
+slider1 = $('#sld1').bxSlider({
+        infiniteLoop: true,
+        nextSelector:'.right-arr',
+        prevSelector:'.left-arr',
+        controls: true,
+        pager:true,
+        pagerCustom:'#choose',
+        auto: false,
+        speed: 500,
+        minSlides: 1,
+        maxSlides: 1,
+        moveSlides: 1,
+        slideMargin:20,
+    onSlideNext:function($slideElement, oldIndex, newIndex){
+          $('#sld1 img').addClass('fadeouted');
+          $('#sld1 img').removeClass('active');
+          $('#sld1 img[data-sld="'+newIndex+'"]').removeClass('fadeouted');
+          $('#sld1 img[data-sld="'+newIndex+'"]').addClass('active');
+      },
+      onSlidePrev:function($slideElement, oldIndex, newIndex){
+          $('#sld1 img').addClass('fadeouted');
+          $('#sld1 img').removeClass('active');
+          $('#sld1 img[data-sld="'+newIndex+'"]').removeClass('fadeouted');
+          $('#sld1 img[data-sld="'+newIndex+'"]').addClass('active');
+      },
+      onSliderLoad:function(){
+        $('#sld1 img.active.bx-clone').removeClass('active');
+        $('#sld1 img').addClass('fadeouted');
+        $('#sld1 img.active').removeClass('fadeouted');
+        $('#sld1').addClass('loaded-slider');
+      }
+    });
 });

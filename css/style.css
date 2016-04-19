@@ -121,7 +121,10 @@ a {
     height: 100%;
     position: relative;
 }
-
+.wrap {
+    width: 980px;
+    position: relative;
+}
 .clear {
     clear: both;
 }
@@ -360,7 +363,7 @@ input {
     background-color: #fff;
     outline: none;
     border: 2px solid transparent;
-    padding-left: 26px;
+    padding-left: 15px;
     line-height: 34px;
     color: #333;
     font-size: 20px;
@@ -592,6 +595,11 @@ input:focus {
     background-color: #fff;
     vertical-align: middle;
     position: relative;
+    cursor: pointer;
+}
+
+.sec3 .toggle[data-page="1"]:after{
+    left: 32px;
 }
 
 .sec3 .toggle:after {
@@ -603,8 +611,9 @@ input:focus {
     position: absolute;
     top: 50%;
     margin-top: -16px;
+    transition: all 0.25s!important;
     left: 7px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .sec3 .content {
@@ -612,6 +621,10 @@ input:focus {
     margin-top: 11px;
     letter-spacing: 7px;
     /* margin-bottom: 10px; */
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    transition: all 1s;
 }
 
 .sec3 .block {
@@ -852,7 +865,7 @@ input:focus {
 }
 
 .sec6 {
-    height: 970px;
+    height: 1000px;
     margin-top: -20px;
 }
 
@@ -868,36 +881,44 @@ input:focus {
 }
 
 .slide img {
-    width: 684px;
+    width: 686px!important;
     height: 415px;
     border-radius: 361px 361px / 258px 258px;
     background-clip: padding-box;
     background-color: #51b9ff;
 }
-
+.left-arr a,.right-arr a{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
 .left-arr {
     position: absolute;
     left: 0px;
-    top: 50%;
+    top: 30.5%;
     background: url(../img/arr-left.png) no-repeat top center;
     height: 108px;
     width: 44px;
     cursor: pointer;
-    margin-top: -22px;
+    /* margin-top: -22px; */
+    z-index: 10;
 }
 
 .right-arr {
     position: absolute;
     right: 0px;
-    top: 50%;
+    top: 30.5%;
     background: url(../img/arr-right.png) no-repeat top center;
     height: 108px;
     width: 44px;
     cursor: pointer;
-    margin-top: -22px;
+    /* margin-top: -22px; */
+    z-index: 10;
 }
 
-.slider {
+.sliderg {
     position: relative;
     padding-top: 65px;
 }
@@ -934,10 +955,12 @@ input:focus {
     margin-bottom: 47px;
 }
 
-.slider-choose a {
+.slider-choose span {
     color: #53b0e1;
     font-size: 16px;
     text-decoration: underline;
+    letter-spacing: 0px;
+    display: inline-block;
 }
 
 .bl {
@@ -959,32 +982,42 @@ input:focus {
 }
 
 
-/*
-.slider-choose a:hover {
+
+.slider-choose .item:hover span {
     text-decoration: none;
-}*/
+    color:black;
+}
 
 .sec6 .arrow {
     /* margin-top: 12px; */
     /* position: absolute; */
     /* left: 50%; */
     /* margin-left: -22px; */
-    bottom: 10px;
+    bottom: 51px;
     background: url(../img/arr-down.png)no-repeat bottom center;
     padding-top: 0px;
     height: 64px;
 }
 
+.maps {
+    /* background: url(../img/footer-sp.png) no-repeat bottom center, url(../img/light-separ.png) no-repeat top center; */
+    height: 1005px;
+    position: relative;
+    width: 100%;
+}
 .map {
     background: url(../img/footer-sp.png) no-repeat bottom center, url(../img/light-separ.png) no-repeat top center;
     height: 1005px;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
 }
 #map {
     height: 1005px;
     width: 100%;
-    /* overflow: visible!important; */
+    z-index: 1;
 }
+
 .pointer {
     position: absolute;
     background: url(../img/pointer.png) no-repeat top center;
@@ -1009,7 +1042,13 @@ footer p {
     font-size: 16px;
 }
 
-
+footer a {
+    display: inline-block;
+    letter-spacing: normal;
+    color: #333;
+    font-family: "MuseoSansCyrl", sans-serif;
+    font-size: 16px;
+}
 
 .modal1 {
     /* position: absolute; */
@@ -1219,14 +1258,14 @@ footer p {
 .sec6 .animation3 {
     position: relative;
     top: 200px;
-    transform: scale(0.75);
+    /* transform: scale(0.75); */
     opacity: 0!important;
 }
 .sec6 .animation3.animated {
     top: 0px;
     transition: all 1s;
     opacity: 1!important;
-    transform: scale(1);
+    /* transform: scale(1); */
 }
 .sec6 .animation1 {
     position: relative;
@@ -1260,3 +1299,6 @@ footer p {
     opacity: 1;
     transition-delay: 0.8s;
 }
+.mouse{/* display:block; *//* background:url(../img/mouse.png) no-repeat center; *//* width:36px; *//* height:56px; *//* position:absolute; *//* bottom:10.9%; *//* left:50%; *//* margin-bottom:-28px; *//* margin-left:-18px; */-webkit-animation-delay:1s;animation-delay:1s;-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:mouseDrag;animation-name:mouseDrag;-webkit-animation-play-state:running;animation-play-state:running;-webkit-animation-timing-function:cubic-bezier(.7,.01,1,1);animation-timing-function:cubic-bezier(.7,.01,1,1);-webkit-animation-delay:1s;-webkit-animation-direction:alternate;-webkit-animation-duration:.5s;-webkit-animation-fill-mode:none;-webkit-animation-iteration-count:infinite;-webkit-animation-name:mouseDrag;-webkit-animation-play-state:running;-webkit-animation-timing-function:cubic-bezier(.7,.01,1,1);}
+@keyframes mouseDrag{0%{margin-bottom:-28px}100%{margin-bottom:-48px}}@-webkit-keyframes mouseDrag{0%{margin-bottom:-28px}100%{margin-bottom:-48px}}
+.rob {opacity: 0;z-index: -1;}
