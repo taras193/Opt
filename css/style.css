@@ -1005,12 +1005,21 @@ input:focus {
     position: relative;
     width: 100%;
 }
-.map {
-    background: url(../img/footer-sp.png) no-repeat bottom center, url(../img/light-separ.png) no-repeat top center;
-    height: 1005px;
+.map_t {
+    background: url(../img/light-separ.png) no-repeat top center;
+    height: 228px;
     position: absolute;
     width: 100%;
     z-index: 100;
+    top: 0;
+}
+.map_b {
+    background: url(../img/footer-sp.png) no-repeat bottom center;
+    height: 34px;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    bottom: 0;
 }
 #map {
     height: 1005px;
@@ -1302,3 +1311,4 @@ footer a {
 .mouse{/* display:block; *//* background:url(../img/mouse.png) no-repeat center; *//* width:36px; *//* height:56px; *//* position:absolute; *//* bottom:10.9%; *//* left:50%; *//* margin-bottom:-28px; *//* margin-left:-18px; */-webkit-animation-delay:1s;animation-delay:1s;-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:mouseDrag;animation-name:mouseDrag;-webkit-animation-play-state:running;animation-play-state:running;-webkit-animation-timing-function:cubic-bezier(.7,.01,1,1);animation-timing-function:cubic-bezier(.7,.01,1,1);-webkit-animation-delay:1s;-webkit-animation-direction:alternate;-webkit-animation-duration:.5s;-webkit-animation-fill-mode:none;-webkit-animation-iteration-count:infinite;-webkit-animation-name:mouseDrag;-webkit-animation-play-state:running;-webkit-animation-timing-function:cubic-bezier(.7,.01,1,1);}
 @keyframes mouseDrag{0%{margin-bottom:-28px}100%{margin-bottom:-48px}}@-webkit-keyframes mouseDrag{0%{margin-bottom:-28px}100%{margin-bottom:-48px}}
 .rob {opacity: 0;z-index: -1;}
+
