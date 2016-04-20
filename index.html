@@ -5,6 +5,7 @@
     <meta content="text/html; charset=UTF-8" http-equiv=content-type>
     <meta name=viewport content="width=980">
     <title>Clothes</title>
+    <script type="text/javascript">if (screen.width <= 699) {document.location = "mobile/"+document.location.search;}</script>
     <link rel=stylesheet type=text/css href=css/normalize.min.css>
     <link rel=stylesheet type=text/css href=css/style.css>
 </head>
@@ -34,7 +35,8 @@
         <div class="wrapper">
                 <h2>Заполните форму, получите прайс и узнайте<br>
     о специальных предложениях для вас</h2>
-            <!-- <div class="calc">
+        <div class="calc-w">
+            <div class="calc" data-step="3">
                 <h3>Введите ваши данные, мы вышлем наш прайс,<br>
 расскажем об акциях и условиях работы</h3>
                 <div class="center">
@@ -42,160 +44,172 @@
                         <input type="text" name="name" placeholder="Имя">
                         <input type="text" name="phone" placeholder="Телефон">
                         <input type="text" name="email" placeholder="E-mail">
+                        <input type="hidden" data-step="1" name="step1">
+                        <input type="hidden" data-step="2" name="step2">
+                        <input type="hidden" data-step="3" name="step3">
                     </div>
                 </div>
-                <a href="javascript:void(0)" class="back"> Назад к 1 вопросу</a>
                 <div class="btn">Отправить</div>
             </div>
-            <div class="calc">
+            <div class="calc" data-step="2" data-var="5">
                 <h3>Скидка зависит от объема,<br>
 какой объем вас интересует?</h3>
                 <div class="center">
                     <div class="content2">
-                        <div class="btn-big line-h">250
+                        <div class="btn-big line-h" data-next-step="3">250
                             <br> тыс.руб
                         </div>
-                        <div class="btn-big line-h">250-500
+                        <div class="btn-big line-h" data-next-step="3">250-500
                             <br> тыс.руб
                         </div>
-                        <div class="btn-big line-h">От 500
+                        <div class="btn-big line-h" data-next-step="3">От 500
                             <br> тыс.руб
                         </div>
                     </div>
                 </div>
-                <a href="javascript:void(0)" class="back"> Назад к 1 вопросу</a>
-                <div class="btns">
-                    <div class="btn-round">1</div>
-                    <div class="btn-round">2</div>
-                    <div class="btn-round">3</div>
-                    <div class="btn-round">4</div>
-
+                <div class="clear"></div>
+            </div>
+            <div class="calc" data-step="1" data-var="1">             
+                    <h3 class="calc-h3" style="opacity:0;height:120px">Кого вы представляете?</h3>
+                <div class="center">
+                    <div class="content2">
+                        <p>К сожалению, мы не работем в розницу</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="calc" data-step="1" data-var="2">             
+                    <h3 class="calc-h3" style="opacity:0;height:120px">Кого вы представляете?</h3>
+                <div class="center">
+                    <div class="content2">
+                        <p>К сожалению, мы не работем с совместными покупками</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="calc" data-step="2" data-var="1">             
+                    <h3 class="calc-h3" style="opacity:0;height:120px">Кого вы представляете?</h3>
+                <div class="center">
+                    <div class="content2">
+                        <p>К сожалению, мы не работем в розницу</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="calc" data-step="2" data-var="2">             
+                    <h3 class="calc-h3" style="opacity:0;height:120px">Кого вы представляете?</h3>
+                <div class="center">
+                    <div class="content2">
+                        <p>К сожалению, мы не работем с совместными покупками</p>
+                    </div>
                 </div>
                 <div class="clear"></div>
             </div>
 
-            <div class="calc">
+
+            
+            <div class="calc" data-step="2" data-var="5">
+                <h3>Скидка зависит от объема,<br>
+какой объем вас интересует?</h3>
+                <div class="center">
+                    <div class="content2">
+                        <div class="btn-big line-h" data-next-step="3">250
+                            <br> тыс.руб
+                        </div>
+                        <div class="btn-big line-h" data-next-step="3">250-500
+                            <br> тыс.руб
+                        </div>
+                        <div class="btn-big line-h" data-next-step="3">От 500
+                            <br> тыс.руб
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+
+            <div class="calc" data-step="1" data-var="5">
                 <h3 class="calc-h3">Какой товар вы сейчас закупаете?</h3>
                 <div class="center">
                     <div class="content2">
-                        <div class="btn-big">Отечественный
+                        <div class="btn-big" data-next-step="2">Отечественный
                         </div>
-                        <div class="btn-big">Импортный
+                        <div class="btn-big" data-next-step="2">Импортный
                         </div>
                     </div>
-                </div>
-                <a href="javascript:void(0)" class="back"> Назад к 1 вопросу</a>
-                <div class="btns">
-                    <div class="btn-round">1</div>
-                    <div class="btn-round">2</div>
-                    <div class="btn-round">3</div>
-                    <div class="btn-round">4</div>
-
                 </div>
                 <div class="clear"></div>
             </div>
 
-            <div class="calc">
+            <div class="calc" data-step="2" data-var="4">
                 <h3 class="calc-h3">На какие объемы вы рассчитываете?</h3>
                 <div class="center">
                     <div class="content2">
-                        <div class="btn-big line-h">До 100
+                        <div class="btn-big line-h" data-next-step="3">До 100
                             <br> тыс.руб
                         </div>
-                        <div class="btn-big line-h">100-200
+                        <div class="btn-big line-h" data-next-step="3">100-200
                             <br> тыс.руб
                         </div>
-                        <div class="btn-big line-h"> От 200
+                        <div class="btn-big line-h" data-next-step="3"> От 200
                             <br> тыс.руб
                         </div>
 
                     </div>
                 </div>
-                <a href="javascript:void(0)" class="back"> Назад к 1 вопросу</a>
-                <div class="btns">
-                    <div class="btn-round">1</div>
-                    <div class="btn-round">2</div>
-                    <div class="btn-round active">3</div>
-                    <div class="btn-round no-active">4</div>
-
-                </div>
                 <div class="clear"></div>
             </div>
 
-            <div class="calc">
+            <div class="calc" data-step="1" data-var="4">
                 <h3>Вас интересует брендирование <br>
 бирками вашей сети?</h3>
                 <div class="center">
                     <div class="content2">
-                        <div class="btn-big">Да, обязательно
+                        <div class="btn-big" data-next-step="2">Да, обязательно
                         </div>
-                        <div class="btn-big">Не принципиально
+                        <div class="btn-big" data-next-step="2">Не принципиально
                         </div>
 
                     </div>
-                </div>
-                <a href="javascript:void(0)" class="back"> Назад к 1 вопросу</a>
-                <div class="btns">
-                    <div class="btn-round">1</div>
-                    <div class="btn-round">2</div>
-                    <div class="btn-round active">3</div>
-                    <div class="btn-round no-active">4</div>
-
                 </div>
                 <div class="clear"></div>
             </div> 
 
-            <div class="calc">
+            <div class="calc" data-step="2" data-var="3">
                 <h3 class="calc-h3">На какие объемы вы рассчитываете?</h3>
                 <div class="center">
                     <div class="content2">
-                        <div class="btn-big line-h">30-40 <br> тыс.руб
+                        <div class="btn-big line-h" data-next-step="3">30-40 <br> тыс.руб
                         </div>
-                        <div class="btn-big line-h">50-100 <br> тыс.руб
+                        <div class="btn-big line-h" data-next-step="3">50-100 <br> тыс.руб
                         </div>
-                        <div class="btn-big line-h">50-100 <br>тыс.руб
+                        <div class="btn-big line-h" data-next-step="3">50-100 <br>тыс.руб
                         </div>
 
                     </div>
-                </div>
-                <a href="javascript:void(0)" class="back"> Назад к 1 вопросу</a>
-                <div class="btns">
-                    <div class="btn-round">1</div>
-                    <div class="btn-round">2</div>
-                    <div class="btn-round active">3</div>
-                    <div class="btn-round no-active">4</div>
-
                 </div>
                 <div class="clear"></div>
             </div>
 
 
-            <div class="calc">
+            <div class="calc" data-step="1" data-var="3">
                 <h3 class="calc-h3">На какие объемы вы рассчитываете?</h3>
                 <div class="center">
                     <div class="content2">
-                        <div class="btn-big line-h">Товар под
+                        <div class="btn-big line-h" data-next-step="2">Товар под
                             <br> реализацию
                         </div>
-                        <div class="btn-big line-h"> Закупка
+                        <div class="btn-big line-h" data-next-step="2"> Закупка
                             <br> товара
                         </div>
 
                     </div>
                 </div>
-                <a href="javascript:void(0)" class="back"> Назад к 1 вопросу</a>
-                <div class="btns">
-                    <div class="btn-round">1</div>
-                    <div class="btn-round">2</div>
-                    <div class="btn-round active">3</div>
-                    <div class="btn-round no-active">4</div>
-
-                </div>
                 <div class="clear"></div>
             </div>
             
             
-             <div class="calc">
+             <!--div class="calc">
                 <h3 class="calc-h3">На какие объемы вы рассчитываете?</h3>
                 <div class="center">
                     <div class="content2">
@@ -206,14 +220,6 @@
      <div class="btn-big">От 30тыс.руб
                         </div>
                     </div>
-                </div>
-                <a href="javascript:void(0)" class="back"> Назад к 1 вопросу</a>
-                <div class="btns">
-                    <div class="btn-round">1</div>
-                    <div class="btn-round">2</div>
-                    <div class="btn-round active">3</div>
-                    <div class="btn-round no-active">4</div>
-
                 </div>
                 <div class="clear"></div>
             </div> 
@@ -230,45 +236,41 @@
   
                     </div>
                 </div>
-                <a href="javascript:void(0)" class="back"> Назад к 1 вопросу</a>
-                <div class="btns">
-                    <div class="btn-round">1</div>
-                    <div class="btn-round">2</div>
-                    <div class="btn-round active">3</div>
-                    <div class="btn-round no-active">4</div>
-
-                </div>
                 <div class="clear"></div>
-            </div>  -->
-                <div class="calc">
+            </div-->
+                <div class="calc active" data-step="0">
                     <h3 class="calc-h3">Кого вы представляете?</h3>
                     <div class="center">
                         <div class="content2">
-                            <div class="btn-big line-h">Совместную
+                            <div class="btn-big line-h var" data-next-step="1" data-var="1">Cебя. Розничная покупка
+                            </div>
+                            <div class="btn-big line-h var" data-next-step="1" data-var="2">Совместную
                                 <br> покупку
                             </div>
-                            <div class="btn-big line-h">Розничный
+                            <div class="btn-big line-h var" data-next-step="1" data-var="3">Розничный
                                 <br> магазин
                             </div>
-                            <div class="btn-big line-h">Сеть
+                            <div class="btn-big line-h var" data-next-step="1" data-var="4">Сеть
                                 <br> магазинов
                             </div>
-                            <div class="btn-big line-h">Оптовый
+                            <div class="btn-big line-h var" data-next-step="1" data-var="5">Оптовый
                                 <br> склад
                             </div>
 
                         </div>
                     </div>
-                    <a href="javascript:void(0)" class="back"> Назад к 1 вопросу</a>
-                    <div class="btns">
-                        <div class="btn-round">1</div>
-                        <div class="btn-round">2</div>
-                        <div class="btn-round active">3</div>
-                        <div class="btn-round no-active">4</div>
-
-                    </div>
                     <div class="clear"></div>
                 </div>
+                    <a href="javascript:void(0)" class="back" data-next-step="0"> Назад к 1 вопросу</a>
+                    <div class="btns">
+                        <div class="btn-round active" data-next-step="0">1</div>
+                        <div class="btn-round" data-next-step="1">2</div>
+                        <div class="btn-round" data-next-step="2">3</div>
+                        <div class="btn-round no-active" data-next-step="3">4</div>
+
+                    </div>
+            
+        </div>
                 <p>Не работаем с совметными покупками. Только опт от 20 тыс.руб.</p>
             <div class="clear"></div>
         </div>

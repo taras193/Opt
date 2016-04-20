@@ -53,6 +53,37 @@ $('.toggle').click(function(e) {
   });
 
 
+var calc_var = 5;
+$('.btn-big,.btn-round,.back').click(function(e){
+  e.preventDefault();
+  var next_step=$(this).data('next-step');
+  if ($(this).hasClass('var')){calc_var = $(this).data('var')}
+    $('.calc.active').removeClass('active').addClass('disactive');
+    $('.btn-round.active').removeClass('active').addClass('disactive');
+  if (next_step=="2" || next_step=="1") {
+    $('.calc[data-step="'+next_step+'"][data-var="'+calc_var+'"]').addClass('active').removeClass('disactive');  
+  }else{
+    $('.calc[data-step="'+next_step+'"]').removeClass('disactive').addClass('active');    
+  }
+  $('.btn-round[data-next-step="'+next_step+'"]').removeClass('disactive').addClass('active');   
+  if (next_step=="3"){
+    $('.btns').fadeOut();
+  }else{
+    $('.btns').fadeIn();
+  }
+  if (next_step=="0"){
+    $('.calc-w .back').fadeOut();
+    $('.calc').removeClass('disactive');
+    $('.calc[data-step="'+next_step+'"]').removeClass('disactive').addClass('active');
+  }else{
+    $('.calc-w .back').fadeIn();
+  }
+  if ($(this).hasClass('btn-big')){
+    $('input[data-step="'+$(this).data('next-step')+'"]').val($(this).text());
+  }
+});
+
+
 function getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;} 
     function run_geo(geo_url){
         $.ajax({type: 'GET',url: geo_url,dataType: 'xml',
