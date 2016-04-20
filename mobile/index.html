@@ -5,8 +5,9 @@
     <meta content="text/html; charset=UTF-8" http-equiv=content-type>
     <meta name=viewport content="width=480">
     <title>Clothes</title>
+    <script type="text/javascript">if (screen.width > 699) {document.location = "../"+document.location.search;}</script>
     <link rel=stylesheet type=text/css href=css/normalize.min.css>
-    <link rel=stylesheet type=text/css href=css/a_style_mobile.css>
+    <link rel=stylesheet type=text/css href=css/style.css>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <div class="wrapper">
             <div class="head">
                 <a href="#" class="logo"></a>
-                <div class="btn">Заказать звонок</div>
+                <div class="btn btn_zz">Заказать звонок</div>
                 <div class="clear"></div>
                 <a href="tel:88002223322" class="phone">8<span>800</span>222 33 22</a>
 
@@ -23,26 +24,27 @@
             <div class="content">
                 <h2>Увеличьте прибыль, работая с<br> надежным партнером. <span>Оптовые<br> поставки детской одежды</span><br> от производителя<sup>*</sup></h2>
                 <p>Не работаем с совместными закупками, минимальный заказ от 20 000</p>
-                <a href="#" class="view">Смотрите далее</a>
-                <a href="#" class="arrow"></a>
+                <a href="#sec1" class="arrow view mouse">Смотрите далее</a>
             </div>
         </div>
     </header>
-    <section class="sec1">
+    <section class="sec1" id="sec1">
         <div class="wrapper">
             <h2>Заполните форму,<br> получите прайс и узнайте<br>
 о специальных предложениях<br> для вас</h2>
             <div class="calc">
                 <h3>Введите ваши данные, мы вышлем<br> наш прайс,
 расскажем об акциях<br> и условиях работы</h3>
-                <div class="center">
-                    <div class="content1">
-                        <input type="text" name="name" placeholder="Имя">
-                        <input type="text" name="phone" placeholder="Имя">
-                        <input type="text" name="email" placeholder="E-mail">
+                <form action="ajax/mail.php">
+                    <div class="center">
+                        <div class="content1">
+                            <input type="text" name="name" placeholder="Имя">
+                            <input type="text" name="phone" placeholder="Имя">
+                            <input type="text" name="email" placeholder="E-mail">
+                        </div>
                     </div>
-                </div>
-                <div class="btn">Отправить</div>
+                    <button type="submit" class="btn">Отправить</button>
+                    </div>
                 <a href="#" class="back">Назад к 1 вопросу</a>
 
             </div>
@@ -332,24 +334,23 @@
                 </div>
             </div>
 
-            <a href="#" class="view">Смотрите далее</a>
-            <a href="#" class="arrow"></a>
+            <a href="#sec3" class="arrow view mouse">Смотрите далее</a>
         </div>
     </section>
-    <section class="sec3">
+    <section class="sec3" id="sec3">
         <div class="wrapper">
             <h2>Популярные товары</h2>
             <div class="triger">
                 <span>для самых<br> маленьких</span>
-                <div class="toggle"></div>
+                <div class="toggle" data-page="0"></div>
                 <span>для тех, кто<br> постарше</span>
             </div>
-            <div class="content">
+            <div class="content" data-pagek="0">
                 <div class="block">
                     <div class="img"> <img src="img/shirt1.png" alt="Боди"> </div>
                     <p>Боди</p>
                     <span>500 &#8399;/шт</span>
-                    <div class="btn">Заказать</div>
+                    <div class="btn btn_zz">Заказать</div>
                     <div class="label-top">от 50
                         <br> р/шт
                     </div>
@@ -358,7 +359,7 @@
                     <div class="img"> <img src="img/shirt2.png" alt="Ползунки"> </div>
                     <p>Ползунки</p>
                     <span>500 &#8399;/шт</span>
-                    <div class="btn">Заказать</div>
+                    <div class="btn btn_zz">Заказать</div>
                     <div class="label-top">от 50
                         <br> р/шт
                     </div>
@@ -367,7 +368,7 @@
                     <div class="img"> <img src="img/shirt3.png" alt="Футболки"> </div>
                     <p>Футболки</p>
                     <span>500 &#8399;/шт</span>
-                    <div class="btn">Заказать</div>
+                    <div class="btn btn_zz">Заказать</div>
                     <div class="label-top">от 50
                         <br> р/шт
                     </div>
@@ -376,33 +377,13 @@
                     <div class="img"><img src="img/shirt4.png" alt="Футболки"> </div>
                     <p>Футболки</p>
                     <span>500 &#8399;/шт</span>
-                    <div class="btn">Заказать</div>
+                    <div class="btn btn_zz">Заказать</div>
                     <div class="label-top">от 50
                         <br> р/шт
                     </div>
                 </div>
-
-                <!--
-                <div class="block">
-                    <div class="img"> <img src="img/shirt5.png" alt="Боди"> </div>
-                    <p>Боди</p>
-                    <span>500 &#8399;/шт</span>
-                    <div class="btn">Заказать</div>
-                    <div class="label-top">от 50
-                        <br> р/шт
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="img">
-                        <img src="img/shirt6.png" alt="Ползунки">
-                    </div>
-                    <p>Ползунки</p>
-                    <span>500 &#8399;/шт</span>
-                    <div class="btn">Заказать</div>
-                    <div class="label-top">от 50
-                        <br> р/шт
-                    </div>
-                </div>
+            </div>
+            <div class="content rob" data-pagek="1">
                 <div class="block">
                     <div class="img"> <img src="img/shirt7.png" alt="Пижамы"> </div>
                     <p>Пижамы</p>
@@ -421,14 +402,33 @@
                         <br> р/шт
                     </div>
                 </div>
--->
-            </div>
-            <a href="#" class="arrow"></a>
-            <a href="#" class="view">Смотрите далее</a>
+                <div class="block">
+                    <div class="img">
+                         <img src="img/shirt5.png" alt="Боди"> </div>
+                    <p>Боди</p>
+                    <span>500 &#8399;/шт</span>
+                    <div class="btn">Заказать</div>
+                    <div class="label-top">от 50
+                        <br> р/шт
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="img">
+                        <img src="img/shirt6.png" alt="Ползунки">
+                    </div>
+                    <p>Ползунки</p>
+                    <span>500 &#8399;/шт</span>
+                    <div class="btn">Заказать</div>
+                    <div class="label-top">от 50
+                        <br> р/шт
+                    </div>
+                </div>
+                </div>
+            <a href="#sec4" class="arrow view mouse">Смотрите далее</a>
             <div class="clear"></div>
         </div>
     </section>
-    <section class="sec4">
+    <section class="sec4" id="sec4">
         <div class="wrapper">
             <h2>О нашей текстильной<br> фабрике
 в цифрах</h2>
@@ -461,17 +461,16 @@
                     </p>
                 </div>
             </div>
-            <a href="#" class="arrow"></a>
-            <a href="#" class="view">Смотрите далее</a>
+            <a href="#sec5" class="arrow view mouse">Смотрите далее</a>
             <div class="clear"></div>
         </div>
     </section>
-    <section class="sec5">
+    <section class="sec5" id="sec5">
         <div class="wrapper">
             <h2>Заполните форму,<br> мы вышлем вам прайсы<br>
  и расскажем об условиях<br> работы с нами <br>
 и отправим образцы</h2>
-            <form>
+            <form action="ajax/mail.php">
                 <input type="text" name="name" placeholder="Имя">
                 <input type="text" name="phone" placeholder="Имя">
                 <input type="text" name="email" placeholder="E-mail">
@@ -495,67 +494,102 @@
 
                 </div>
             </div>
-           <a href="#" class="arrow"></a>
-            <a href="#" class="view">Смотрите далее</a>
-
-
-
+           <a href="#sec6" class="arrow view mouse">Смотрите далее</a>
         </div>
     </section>
-    <section class="sec6">
+    <section class="sec6" id="sec6">
         <div class="wrapper">
             <h2> Наше производство</h2>
-            <div class="slider">
+            <div class="sliderg">
                 <div class="left-arr"></div>
                 <div class="right-arr"></div>
                 <div class="slide">
-                    <img src="img/m-test.jpg" alt="">
+                 <div id="sld1">
+                    <img src="img/test.jpg" alt="" class="">
+                    <img src="img/test.jpg" alt="" class="">
+                    <img src="img/test.jpg" alt="" class="">
+                    <img src="img/test.jpg" alt="" class="">
+                    <img src="img/test.jpg" alt="" class="">
                 </div>
-            </div>
-            <div class="slider-choose">
-                <div class="item">
+                </div>
+            <div class="slider-choose" id="choose">
+                <a class="item" data-slide-index="0">
                     <div class="bl">
                         <img src="img/img.jpg" alt="" class="img">
                         <p></p>
                     </div>
-                    <a href="#">Производство<br>
-в BittirKids</a>
-                </div>
-                <div class="item">
+                    <span>Производство<br>
+в BittirKids</span>
+                </a>
+                <a href="#" class="item" data-slide-index="2">
                     <div class="bl">
                         <img src="img/img.jpg" alt="" class="img">
                         <p></p>
                     </div>
-                    <a href="#">Производство<br>
-в BittirKids</a>
-                </div>
-                <div class="item">
-                    <div class="bl">
-                        <img src="img/img.jpg" alt="" class="img">
-                        <p></p>
-                    </div>
-                    <a href="#">Производство<br>
-в BittirKids</a>
-                </div>
+                    <span>Производство<br>
+    в BittirKids</span>
+                    </a>
+                <a href="#" class="item" data-slide-index="3">
+                        <div class="bl">
+                            <img src="img/img.jpg" alt="" class="img">
+                            <p></p>
+                        </div>
+                        <span>Производство<br>
+    в BittirKids</span>
+                    </a>
              
             </div>
-
-            <a href="#" class="view">Смотрите далее</a>
-            <a href="#" class="arrow"></a>
+</div>
+            <a href="#map" class="arrow view mouse">Смотрите далее</a>
         </div>
     </section>
-    <div class="map">
-        <div class="pointer"></div>
-        <div class="clear"></div>
-    </div>
+    <section class="maps">
+        <div class="map_t"></div>
+        <div id="map"></div>
+        <div class="map_b"></div>
+    </section>
     <footer>
-        <p>bittir.fabric@yandex.ru</p>
+    <div class="wrappper">
+        <a href="" class="btn_zz">bittir.fabric@yandex.ru</a>
         <p>Сделано в ...</p>
   <p>© Bittirkids. Все права защищены</p>
+  </div>
     </footer>
-   
+      <div id="hidden-box">
+
+        <div class="modal1" id="pop">
+            <div class="calc">
+                <h3 class="calc-h3">Заказать звонок</h3>
+                <form action="ajax/mail.php">
+                <div class="center">
+                    <div class="content1">
+                        <input type="text" name="name" placeholder="Имя">
+                        <input type="text" name="phone" placeholder="Телефон">
+                    </div>
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+                <input class="check" type="checkbox"><span>Согласен с политикой конфиденциальности</span>
+                <div class="clear"></div>
+                </form>
+            </div>
+        </div>
+        <div class="modal2" id="okgo">
+            <div class="calc">
+                <h3 class="calc-h3">Спасибо!</h3>
+                <div class="center">
+                    Заявка отправлена,
+                    <br> наш менеджер перезвонит вам
+                    <br> в течение 5 минут и поможет
+                    <br> сделать следующий шаг
+                </div>
+                <span><big>&times;</big> Согласен с политикой конфиденциальности</span>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </div>
     <div id="maket"></div>
-    <!--<script type=text/javascript src=js/jquery-2.1.1.min.js></script>
+<script type=text/javascript src=js/jquery-2.1.1.min.js></script>
 <script type=text/javascript src=js/jquery.cookie.min.js></script>
 <script type=text/javascript src=js/jquery.maskedinput.min.js></script>
 <script type=text/javascript src=js/jquery.arcticmodal.min.js></script>
@@ -563,7 +597,10 @@
 <script type=text/javascript src=js/jquery.maphilight.min.js></script>
 <script type=text/javascript src=js/jquery.bxslider.min.js></script>
 <script type=text/javascript src=js/jquery.fancybox.pack.js></script>
-<script type=text/javascript src=js/main.js></script>-->
+<script type=text/javascript src=js/jquery.viewportchecker.min.js></script>
+<script type=text/javascript src=js/main.js></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+     <script src="js/map.js"></script>
 </body>
 
 </html>
