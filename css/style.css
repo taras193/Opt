@@ -226,7 +226,7 @@ header h2 {
 }
 
 header {
-    background: url(../img/bg-header.jpg) no-repeat center;
+    background: url(../img/bg-header.jpg) no-repeat top 26% center;
     position: relative;
     z-index: 20;
     height: 1015px;
@@ -257,7 +257,8 @@ p {
 header p {
     /* padding-top: 435px; */
     /* padding-bottom: 43px; */
-    text-shadow: 0px 0px 4px rgb(252, 231, 203);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0),0px 0px 10px rgb(0, 0, 0),0px 0px 10px rgb(0, 0, 0),0px 0px 10px rgb(0, 0, 0);
+    color: white;
 }
 
 .content {
@@ -299,7 +300,7 @@ bottom: 113px;
     margin-left: -90px;
     padding-top: 28px;
     /* bottom: 121px; */
-    z-index: 30;
+    z-index: 50!important;
 }
 header .arrow {
     /* margin-bottom: 13px; */
@@ -331,6 +332,7 @@ header .view {
     position: relative!important;
     left: 0!important;
     margin-left: 0!important;
+    width: 180px;
 }
 
 .sec1 {
@@ -1468,6 +1470,7 @@ footer a {
 #s1s1 {
     margin-top: -29.349397590361445px;
     top: 10.891566265060241%;
+    z-index: 30;
 }
 #s1s2 {
     margin-top: 161.42168674698794px;
@@ -1478,12 +1481,16 @@ footer a {
     top: 24.10843373493976%;
 }
 #s1s4 {
-    margin-top: 102.72289156626506px;
-    top: 68.87951807228916%;
+    margin-top: 205.44578313253012px;
+    top: 61.75903614457832%;
 }
 #s1s5 {
-    margin-top: 73.37349397590361px;
-    top: 78.7710843373494%;
+    margin-top: -44.02409638554217px;
+    top: 11.337349397590362%;
+    z-index: 37;
+    width: 19%;
+    left: 50%;
+    margin-left: -90px;
    }
    ::-webkit-input-placeholder {color:black;}
 ::-moz-placeholder          {color:black;}
