@@ -842,7 +842,7 @@ input:focus {
 }
 
 .lock {
-    opacity: .5;
+    /* opacity: .5; */
     font-size: 16px;
     background: url(../img/lock.png) no-repeat left top;
     float: right;
@@ -1244,7 +1244,7 @@ footer a {
 .animation3 {
     position: relative;
     top: 200px;
-    transform: scale(0.5);
+    /* transform: scale(0.5); */
     opacity: 0!important;
 }
 .animation3.animated {
