@@ -1102,6 +1102,10 @@ footer a {
     box-shadow: 0 1px 27px rgba(52, 52, 52, .29);
     width: 427px;
     height: 399px;
+    opacity: 1;
+    /* position: relative!important; */
+    transform: translateX(0%);
+    transition: all 0.25s;
 }
 
 .modal1 .calc-h3 {
