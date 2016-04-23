@@ -25,7 +25,20 @@ function initalize(){
 
 $(document).ready(function() {
   
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    
+$('body').addClass('loaded');
+  }
+  else{
 
+setTimeout(function(){
+    if(!$('body').hasClass('loaded')) {
+      $('body').addClass('loaded');
+      initfullpage();
+    };
+  },3000);
+
+  }
 console.log('document.ready');
   
 setTimeout(initalize(),1000);
@@ -35,6 +48,7 @@ $('.btn_zz').click(function(e) {
     e.preventDefault();
     $('#pop').arcticmodal();
   });
+
 $('.toggle').click(function(e) {
     e.preventDefault();
     
@@ -50,6 +64,31 @@ $('.toggle').click(function(e) {
         $('.sec3 .content[data-pagek="0"]').removeClass('rob');
         $('.sec3 .content[data-pagek="1"]').addClass('rob');
       }
+  });
+
+$('.togl').click(function() {
+  $('.toggle').attr('data-page','0')
+   $('.sec3 .content[data-pagek="0"]').removeClass('rob');
+        $('.sec3 .content[data-pagek="1"]').addClass('rob');
+  });
+$('.togr').click(function() {
+  $('.toggle').attr('data-page','1')
+   $('.sec3 .content[data-pagek="1"]').removeClass('rob');
+    $('.sec3 .content[data-pagek="0"]').addClass('rob');
+  });
+$(".fonbg").hover(function() {
+    $(".fonbg").removeClass("active");
+    $(this).addClass("active");
+    if ("1" == $(this).data("dac")) $(".bg_sl").addClass("im1");
+    else $(".bg_sl").removeClass("im1")
+      if ("2" == $(this).data("dac")) $(".bg_sl").addClass("im2");
+    else $(".bg_sl").removeClass("im2")
+    if ("3" == $(this).data("dac")) $(".bg_sl").addClass("im3");
+    else $(".bg_sl").removeClass("im3")
+      if ("4" == $(this).data("dac")) $(".bg_sl").addClass("im4");
+    else $(".bg_sl").removeClass("im4")
+      if ("5" == $(this).data("dac")) $(".bg_sl").addClass("im5");
+    else $(".bg_sl").removeClass("im5")
   });
 
 var calc_var = 5;

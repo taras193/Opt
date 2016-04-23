@@ -9,8 +9,15 @@
     <link rel=stylesheet type=text/css href=css/normalize.min.css>
     <link rel=stylesheet type=text/css href=css/style.css>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>#loader:after,#loader:before{content:"";position:absolute;height:initial;width:initial}#loader-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000}#loader{display:block;position:relative;left:50%;top:50%;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;border:3px solid transparent;border-top-color:#fff;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite;z-index:1001}#loader:before{top:5px;left:5px;right:5px;bottom:5px;border-radius:50%;border:3px solid transparent;border-top-color:#fff;-webkit-animation:spin 3s linear infinite;animation:spin 3s linear infinite}#loader:after{top:15px;left:15px;right:15px;bottom:15px;border-radius:50%;border:3px solid transparent;border-top-color:#fff;-webkit-animation:spin 1.5s linear infinite;animation:spin 1.5s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}#loader-wrapper .loader-section{position:fixed;top:0;width:51%;height:100%;background:#111;z-index:1000;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}#loader-wrapper .loader-section.section-left{left:0}#loader-wrapper .loader-section.section-right{right:0}.loaded #loader-wrapper .loader-section.section-left{-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);transition:all .7s .3s cubic-bezier(.645,.045,.355,1)}.loaded #loader-wrapper .loader-section.section-right{-webkit-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%);-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);transition:all .7s .3s cubic-bezier(.645,.045,.355,1)}.loaded #loader{opacity:0;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}.loaded #loader-wrapper{visibility:hidden;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:all .3s 1s ease-out;transition:all .3s 1s ease-out}.no-js #loader-wrapper{display:none}.no-js h1{color:#222}#content{margin:0 auto;padding-bottom:50px;width:80%;max-width:978px}body:not(.loaded){overflow:hidden}</style>
 </head>
 <body>
+<div id="loader-wrapper">
+   <div id="loader"></div>
+   <div class="loader-section section-left"></div>
+   <div class="loader-section section-right"></div>
+  </div>
+  <script>if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){document.getElementById("loader-wrapper").style.display="none"}</script>
     <header>
         <div class="wrapper">
         
@@ -43,6 +50,13 @@
         <!--div class="fot_bg"></div-->
     </header>
     <section class="sec1" id="sec1">
+    <div class="bg_sl im3">
+        <div class="bgs1"></div>
+        <div class="bgs2"></div>
+        <div class="bgs3"></div>
+        <div class="bgs4"></div>
+        <div class="bgs5"></div>
+    </div>
         <div class="wrapper">
                 <h2>Заполните форму, получите прайс и узнайте<br>
     о специальных предложениях для вас</h2>
@@ -204,7 +218,7 @@
 
 
             <div class="calc" data-step="1" data-var="3">
-                <h3 class="calc-h3">На какие объемы вы рассчитываете?</h3>
+                <h3 class="calc-h3">Что вас интересует?</h3>
                 <div class="center">
                     <div class="content2">
                         <div class="btn-big line-h" data-next-step="2">Товар под
@@ -253,18 +267,18 @@
                     <h3 class="calc-h3">Кого вы представляете?</h3>
                     <div class="center">
                         <div class="content2">
-                            <div class="btn-big line-h var" data-next-step="1" data-var="1">Cебя. Розничная покупка
+                            <div class="btn-big fonbg line-h var" data-next-step="1" data-var="1" data-dac="1">Cебя. Розничная покупка
                             </div>
-                            <div class="btn-big line-h var" data-next-step="1" data-var="2">Совместную
+                            <div class="btn-big fonbg line-h var" data-next-step="1" data-var="2" data-dac="2">Совместную
                                 <br> покупку
                             </div>
-                            <div class="btn-big line-h var" data-next-step="1" data-var="3">Розничный
+                            <div class="btn-big fonbg line-h var active" data-next-step="1" data-var="3" data-dac="3">Розничный
                                 <br> магазин
                             </div>
-                            <div class="btn-big line-h var" data-next-step="1" data-var="4">Сеть
+                            <div class="btn-big fonbg line-h var"  data-next-step="1" data-var="4" data-dac="4">Сеть
                                 <br> магазинов
                             </div>
-                            <div class="btn-big line-h var" data-next-step="1" data-var="5">Оптовый
+                            <div class="btn-big fonbg line-h var" data-next-step="1" data-var="5" data-dac="5">Оптовый
                                 <br> склад
                             </div>
 
@@ -341,7 +355,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#sec3" class="arrow view mouse">Смотрите далее</a>
+            <!--a href="#sec3" class="arrow view mouse">Смотрите далее</a-->
         </div>
         <div class="fot_bg2"></div>
     </section>
@@ -349,52 +363,52 @@
         <div class="wrapper">
             <h2>Популярные товары</h2>
             <div class="triger">
-                <span>для самых маленьких</span>
+                <span class="togl">для самых маленьких</span>
                 <div class="toggle" data-page="0"></div>
-                <span>для тех, кто постарше</span>
+                <span class="togr">для тех, кто постарше</span>
             </div>
             <div class="wrap">
             <div class="content" data-pagek="0">
                 <div class="block animation">
-                    <div class="img"> <img src="img/shirt1.png" alt="Боди"> </div>
-                    <p>Боди</p>
-                    <span>500 р/шт</span>
+                    <div class="img"> <img src="img/buy/shirt1.jpg" alt="Ползунки нагрудные"> </div>
+                    <p>Ползунки нагрудные</p>
+                    <span>30 р/шт</span>
                     <div class="btn btn_zz">Заказать</div>
                     <div class="label-top">от 50
                         <br> р/шт
                     </div>
                 </div>
                 <div class="block animation">
-                    <div class="img"> <img src="img/shirt2.png" alt="Ползунки"> </div>
+                    <div class="img"> <img src="img/buy/shirt2.jpg" alt="Футболка ясельная"> </div>
+                    <p>Футболка ясельная</p>
+                    <span>82 р/шт</span>
+                    <div class="btn btn_zz">Заказать</div>
+                    <div class="label-top">от 50
+                        <br> р/шт
+                    </div>
+                </div>
+                <div class="block animation">
+                    <div class="img"> <img src="img/buy/shirt3.jpg" alt="Кофточка"> </div>
+                    <p>Кофточка</p>
+                    <span>70 р/шт</span>
+                    <div class="btn btn_zz">Заказать</div>
+                    <div class="label-top">от 50
+                        <br> р/шт
+                    </div>
+                </div>
+                <div class="block animation">
+                    <div class="img"><img src="img/buy/shirt4.jpg" alt="Пижама ясельная"> </div>
+                    <p>Пижама ясельная</p>
+                    <span>70 р/шт</span>
+                    <div class="btn btn_zz">Заказать</div>
+                    <div class="label-top">от 50
+                        <br> р/шт
+                    </div>
+                </div>
+                <div class="block animation">
+                    <div class="img"> <img src="img/buy/shirt5.jpg" alt="Ползунки"> </div>
                     <p>Ползунки</p>
-                    <span>500 р/шт</span>
-                    <div class="btn btn_zz">Заказать</div>
-                    <div class="label-top">от 50
-                        <br> р/шт
-                    </div>
-                </div>
-                <div class="block animation">
-                    <div class="img"> <img src="img/shirt3.png" alt="Футболки"> </div>
-                    <p>Футболки</p>
-                    <span>500 р/шт</span>
-                    <div class="btn btn_zz">Заказать</div>
-                    <div class="label-top">от 50
-                        <br> р/шт
-                    </div>
-                </div>
-                <div class="block animation">
-                    <div class="img"><img src="img/shirt4.png" alt="Футболки"> </div>
-                    <p>Футболки</p>
-                    <span>500 р/шт</span>
-                    <div class="btn btn_zz">Заказать</div>
-                    <div class="label-top">от 50
-                        <br> р/шт
-                    </div>
-                </div>
-                <div class="block animation">
-                    <div class="img"> <img src="img/shirt5.png" alt="Боди"> </div>
-                    <p>Боди</p>
-                    <span>500 р/шт</span>
+                    <span>35  р/шт</span>
                     <div class="btn btn_zz">Заказать</div>
                     <div class="label-top">от 50
                         <br> р/шт
@@ -402,28 +416,28 @@
                 </div>
                 <div class="block animation">
                     <div class="img">
-                        <img src="img/shirt6.png" alt="Ползунки">
+                        <img src="img/buy/shirt6.jpg" alt="Боди">
                     </div>
-                    <p>Ползунки</p>
-                    <span>500 р/шт</span>
+                    <p>Боди</p>
+                    <span>50 р/шт</span>
                     <div class="btn btn_zz">Заказать</div>
                     <div class="label-top">от 50
                         <br> р/шт
                     </div>
                 </div>
                 <div class="block animation">
-                    <div class="img"> <img src="img/shirt7.png" alt="Пижамы"> </div>
-                    <p>Пижамы</p>
-                    <span>500 р/шт</span>
+                    <div class="img"> <img src="img/buy/shirt7.jpg" alt="Пижама ясельная"> </div>
+                    <p>Пижама ясельная</p>
+                    <span>160 р/шт</span>
                     <div class="btn btn_zz">Заказать</div>
                     <div class="label-top">от 50
                         <br> р/шт
                     </div>
                 </div>
                 <div class="block animation">
-                    <div class="img"> <img src="img/shirt8.png" alt="Пижамы"> </div>
-                    <p>Пижамы</p>
-                    <span>500 р/шт</span>
+                    <div class="img"> <img src="img/buy/shirt8.jpg" alt="Распашонка"> </div>
+                    <p>Распашонка</p>
+                    <span>82 р/шт</span>
                     <div class="btn btn_zz">Заказать</div>
                     <div class="label-top">от 50
                         <br> р/шт
@@ -432,82 +446,82 @@
             </div>
             <div class="content rob" data-pagek="1">
                 <div class="block animation">
-                    <div class="img"> <img src="img/shirt5.png" alt="Боди"> </div>
-                    <p>Боди</p>
-                    <span>500 р/шт</span>
+                    <div class="img"> <img src="img/buy/shir1.jpg" alt="Трусы"> </div>
+                    <p>Трусы</p>
+                    <span>95 р/шт</span>
                     <div class="btn btn_zz">Заказать</div>
-                    <div class="label-top">от 50
+                    <div class="label-top">от 95 
+                        <br> р/шт
+                    </div>
+                </div>
+                <div class="block animation">
+                    <div class="img"> <img src="img/buy/shir2.jpg" alt="Футболка"> </div>
+                    <p>Футболка</p>
+                    <span>53 р/шт</span>
+                    <div class="btn btn_zz">Заказать</div>
+                    <div class="label-top">от 53 
+                        <br> р/шт
+                    </div>
+                </div>
+                <div class="block animation">
+                    <div class="img"> <img src="img/buy/shir3.jpg" alt="Комплект"> </div>
+                    <p>Комплект</p>
+                    <span>90 р/шт</span>
+                    <div class="btn btn_zz">Заказать</div>
+                    <div class="label-top">от 90 
+                        <br> р/шт
+                    </div>
+                </div>
+                <div class="block animation">
+                    <div class="img"><img src="img/buy/shir4.jpg" alt="Штанишки"> </div>
+                    <p>Штанишки</p>
+                    <span>130  р/шт</span>
+                    <div class="btn btn_zz">Заказать</div>
+                    <div class="label-top">от 130 
+                        <br> р/шт
+                    </div>
+                </div>
+                <div class="block animation">
+                    <div class="img"> <img src="img/buy/shir5.jpg" alt="Майка"> </div>
+                    <p>Майка</p>
+                    <span>70 р/шт</span>
+                    <div class="btn btn_zz">Заказать</div>
+                    <div class="label-top">от 70 
                         <br> р/шт
                     </div>
                 </div>
                 <div class="block animation">
                     <div class="img">
-                        <img src="img/shirt6.png" alt="Ползунки">
+                        <img src="img/buy/shir6.jpg" alt="Футболка однотонная">
                     </div>
-                    <p>Ползунки</p>
-                    <span>500 р/шт</span>
+                    <p>Футболка однотонная</p>
+                    <span>130   р/шт</span>
                     <div class="btn btn_zz">Заказать</div>
-                    <div class="label-top">от 50
+                    <div class="label-top">от 130  
                         <br> р/шт
                     </div>
                 </div>
                 <div class="block animation">
-                    <div class="img"> <img src="img/shirt7.png" alt="Пижамы"> </div>
-                    <p>Пижамы</p>
-                    <span>500 р/шт</span>
+                    <div class="img"> <img src="img/buy/shir7.jpg" alt="Пижама"> </div>
+                    <p>Пижама</p>
+                    <span>130  р/шт</span>
                     <div class="btn btn_zz">Заказать</div>
-                    <div class="label-top">от 50
+                    <div class="label-top">от 130 
                         <br> р/шт
                     </div>
                 </div>
                 <div class="block animation">
-                    <div class="img"> <img src="img/shirt8.png" alt="Пижамы"> </div>
-                    <p>Пижамы</p>
-                    <span>500 р/шт</span>
+                    <div class="img"> <img src="img/buy/shir8.jpg" alt="Футболка"> </div>
+                    <p>Футболка</p>
+                    <span>57  р/шт</span>
                     <div class="btn btn_zz">Заказать</div>
-                    <div class="label-top">от 50
-                        <br> р/шт
-                    </div>
-                </div>
-                <div class="block animation">
-                    <div class="img"> <img src="img/shirt1.png" alt="Боди"> </div>
-                    <p>Боди</p>
-                    <span>500 р/шт</span>
-                    <div class="btn btn_zz">Заказать</div>
-                    <div class="label-top">от 50
-                        <br> р/шт
-                    </div>
-                </div>
-                <div class="block animation">
-                    <div class="img"> <img src="img/shirt2.png" alt="Ползунки"> </div>
-                    <p>Ползунки</p>
-                    <span>500 р/шт</span>
-                    <div class="btn btn_zz">Заказать</div>
-                    <div class="label-top">от 50
-                        <br> р/шт
-                    </div>
-                </div>
-                <div class="block animation">
-                    <div class="img"> <img src="img/shirt3.png" alt="Футболки"> </div>
-                    <p>Футболки</p>
-                    <span>500 р/шт</span>
-                    <div class="btn btn_zz">Заказать</div>
-                    <div class="label-top">от 50
-                        <br> р/шт
-                    </div>
-                </div>
-                <div class="block animation">
-                    <div class="img"><img src="img/shirt4.png" alt="Футболки"> </div>
-                    <p>Футболки</p>
-                    <span>500 р/шт</span>
-                    <div class="btn btn_zz">Заказать</div>
-                    <div class="label-top">от 50
+                    <div class="label-top">от 57 
                         <br> р/шт
                     </div>
                 </div>
             </div>
             </div>
-            <a href="#sec4" class="arrow view mouse">Смотрите далее</a>
+            <!--a href="#sec4" class="arrow view mouse">Смотрите далее</a-->
         </div>
     </section>
     <section class="sec4" id="sec4">
@@ -551,7 +565,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#sec5" class="arrow view mouse">Смотрите далее</a>
+            <!--a href="#sec5" class="arrow view mouse">Смотрите далее</a-->
             <div class="clear"></div>
         </div>
         <div class="fot_bg4"></div>
@@ -646,7 +660,7 @@
                     </a>
                 </div>
             </div>
-            <a href="#map" class="arrow view mouse">Смотрите далее</a>
+            <!--a href="#map" class="arrow view mouse">Смотрите далее</a-->
         </div>
     </section>
     <section class="maps">
@@ -689,8 +703,8 @@
                 <span><big>&times;</big> Согласен с политикой конфиденциальности</span>
                 <div class="clear"></div>
         </div>
-
     </div>
+
     <div id="maket"></div>
     <script type=text/javascript src=js/jquery-2.1.1.min.js></script>
 <script type=text/javascript src=js/jquery.cookie.min.js></script>
