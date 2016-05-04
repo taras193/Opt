@@ -51,7 +51,16 @@ $('.toggle').click(function(e) {
         $('.sec3 .content[data-pagek="1"]').addClass('rob');
       }
   });
-
+$('.togl').click(function() {
+  $('.toggle').attr('data-page','0')
+   $('.sec3 .content[data-pagek="0"]').removeClass('rob');
+        $('.sec3 .content[data-pagek="1"]').addClass('rob');
+  });
+$('.togr').click(function() {
+  $('.toggle').attr('data-page','1')
+   $('.sec3 .content[data-pagek="1"]').removeClass('rob');
+    $('.sec3 .content[data-pagek="0"]').addClass('rob');
+  });
 
 var calc_var = 5;
 $('.btn-big,.btn-round,.back').click(function(e){

@@ -417,6 +417,8 @@ input:focus {
     font-size: 20px;
     padding-top: 23px;
     /* padding-bottom: 232px; */
+    font-weight: 400;
+    text-shadow: 0px 0px 6px rgba(150, 150, 150, 1);
 }
 
 .back {
@@ -596,7 +598,7 @@ input:focus {
     margin-top: 51px;
 }
 .togl{
-    background: #33C510;
+    background: #3EDC19;
     color: white!important;
     padding: 10px;
     border-radius: 26px;
@@ -604,7 +606,7 @@ input:focus {
 .togl:hover{background: #09A200;transition: all 0.25s;}
 .togr:hover{background: #09A200;transition: all 0.25s;}
 .togr{
-    background: #33C510;
+    background: #3EDC19;
     color: white!important;
     padding: 10px;
     border-radius: 26px;
