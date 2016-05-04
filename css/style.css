@@ -1190,7 +1190,7 @@ footer a {
 .modal2 {
     /* position: absolute; */
     width: 427px;
-    height: 467px;
+    background: white;
     /* top: 150px; */
     /* right: 50px; */
     text-align: center;
