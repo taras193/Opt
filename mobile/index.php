@@ -521,7 +521,7 @@
 и отправим образцы</h2>
       <form action="ajax/mail.php" method="post">
         <input type="text" name="name" placeholder="Имя">
-        <input type="text" name="phone" placeholder="Имя">
+        <input type="text" name="phone" placeholder="Телефон">
         <input type="text" name="email" placeholder="E-mail">
         <button type="submit" class="btn">Отправить</button>
       </form>
