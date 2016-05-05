@@ -614,8 +614,8 @@
   <footer>
   <div class="wrappper">
     <a href="" class="btn_zz">bittir.fabric@yandex.ru</a>
-    <p>Сделано в ...</p>
-  <p>© Bittirkids. Все права защищены</p>
+    <p>© Bittirkids. Все права защищены</p>
+    <a href="http://gulfstream.bz/" target="_blank" class="gulf">Разработка сайта:</a>  
   </div>
   </footer>
     <div id="hidden-box">
