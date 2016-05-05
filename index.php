@@ -27,7 +27,7 @@
         </div>
         <div class="right">
           <div class="btn btn_zz">Заказать звонок</div>
-          <div class="phone"><span class="lptracker_phone">8 800 222 33 22</span></div>
+          <div class="phone"><span class="lptracker_phone">8 800 505 14 76</span></div>
         </div>
         </div>
       </div>
