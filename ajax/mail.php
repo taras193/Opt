@@ -2,6 +2,7 @@
 $frm = $_POST['frm'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$email = $_POST['email'];
 $step1 = $_POST['step1'];
 $step2 = $_POST['step2'];
 $step3 = $_POST['step3'];
@@ -30,9 +31,10 @@ $headers.= "Content-type: text/plain; charset=utf-8\r\n";
 
 $to = "triowork2@gmail.com";
 
-$message = "Форма: $frm\n\n";
+//$message = "Форма: $frm\n\n";
 $message .= "Имя: $name\n";
 $message .= "Телефон: $phone\n\n";
+$message .= "Email: $email\n\n";
 $message .= "Шаг 1: $step1\n";
 $message .= "Шаг 2: $step2\n";
 $message .= "Шаг 3: $step3\n\n";

@@ -49,6 +49,11 @@ $('.btn_zz').click(function(e) {
     $('#pop').arcticmodal();
   });
 
+$('.btn_zz2').click(function(e) {
+    e.preventDefault();
+    $('#pop2').arcticmodal();
+  });
+
 $('.toggle').click(function(e) {
     e.preventDefault();
     
