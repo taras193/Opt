@@ -1,4 +1,4 @@
-
+$('<link rel=stylesheet type=text/css href=css/normalize.min.css><link rel=stylesheet type=text/css href=css/style.css>').appendTo('head');
 var initalized = 0;
 function initalize(){
   
