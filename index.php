@@ -7,7 +7,7 @@
   <script type="text/javascript">if (screen.width <= 699) {document.location = "mobile/"+document.location.search;}</script>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <style><? include('css/head.css'); ?></style>
-  <noindex><script async src="data:text/javascript;charset=utf-8;base64,ZnVuY3Rpb24gbG9hZHNjcmlwdChlLHQpe3ZhciBuPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO24uc3JjPSIvL2xwdHJhY2tlci5ydS9hcGkvIitlO24ub25yZWFkeXN0YXRlY2hhbmdlPXQ7bi5vbmxvYWQ9dDtkb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKG4pO3JldHVybiAxfXZhciBpbml0X2xzdGF0cz1mdW5jdGlvbigpe2xzdGF0cy5zaXRlX2lkPTE2MDY1O2xzdGF0cy5yZWZlcmVyKCl9O3ZhciBqcXVlcnlfbHN0YXRzPWZ1bmN0aW9uKCl7alFzdGF0Lm5vQ29uZmxpY3QoKTtsb2Fkc2NyaXB0KCJzdGF0c19hdXRvLmpzIixpbml0X2xzdGF0cyl9O2xvYWRzY3JpcHQoImpxdWVyeS0xLjEwLjIubWluLmpzIixqcXVlcnlfbHN0YXRzKQ=="></script></noindex>
+  <? include('track/head.php'); ?>
 </head>
 <body>
 <div id="loader-wrapper">
@@ -71,6 +71,8 @@
             <input type="hidden" data-step="1" name="step1">
             <input type="hidden" data-step="2" name="step2">
             <input type="hidden" data-step="3" name="step3">
+            <input type="hidden" name="frm" value="Калькулятор">
+            <input type="hidden" name="event" value="d_calc">
           </div>
         </div>
         <button type="submit" class="btn">Отправить</button>
@@ -562,6 +564,8 @@
         <input type="text" name="name" placeholder="Имя">
         <input type="text" name="phone" placeholder="Телефон">
         <input type="text" name="email" placeholder="E-mail">
+        <input type="hidden" name="frm" value="Прайсы, условия, образцы">
+        <input type="hidden" name="event" value="d_price">
         <button type="submit" class="btn">Отправить</button>
       </form>
       <div class="lock">Ваши данные защищены</div>
@@ -665,6 +669,8 @@
           <div class="content1">
             <input type="text" name="name" placeholder="Имя">
             <input type="text" name="phone" placeholder="Телефон">
+            <input type="hidden" name="frm" value="Заказаь звонок">
+            <input type="hidden" name="event" value="d_zz">
           </div>
         </div>
         <button type="submit" class="btn">Отправить</button>
@@ -681,6 +687,8 @@
           <div class="content1">
             <input type="text" name="name" placeholder="Имя">
             <input type="text" name="phone" placeholder="Телефон">
+            <input type="hidden" name="frm" value="Заказаь продукцию">
+            <input type="hidden" name="event" value="d_zakaz">
           </div>
         </div>
         <button type="submit" class="btn">Отправить</button>
@@ -700,7 +708,7 @@
         <div class="clear"></div>
     </div>
   </div>
-  <script type=text/javascript src=js/jquery-2.1.1.min.js></script>
+<script type=text/javascript src=js/jquery-2.1.1.min.js></script>
 <script type=text/javascript src=js/jquery.cookie.min.js></script>
 <script type=text/javascript src=js/jquery.maskedinput.min.js></script>
 <script type=text/javascript src=js/jquery.arcticmodal.min.js></script>
@@ -711,6 +719,7 @@
 <script type=text/javascript src=js/jquery.viewportchecker.min.js></script>
 <script type=text/javascript src=js/main.js></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-   <script src="js/map.js"></script>
+<script src="js/map.js"></script>
+<?php include_once("track/body.php") ?>
 </body>
 </html>

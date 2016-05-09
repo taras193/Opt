@@ -162,9 +162,13 @@ function getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + 
             var type=$(this).attr('method');
             var url=$(this).attr('action');
             var data=$(this).serialize();
+            var track_event=$(this).find('input[name="event"]').val();
             $.ajax({type: type, url: url, data: data,
             success : function(){
-                $.arcticmodal('close');$('#okgo').arcticmodal();
+                $.arcticmodal('close');
+                $('#okgo').arcticmodal();
+                yaCounter37234850.reachGoal(track_event);
+                ga('send','event','submit',track_event);
             }
         }); 
         }
