@@ -656,9 +656,11 @@
     <div class="map_b"></div>
   </section>
   <footer>
+  <div class="wrapper">
     <a href="" class="btn_zz">bittir.fabric@yandex.ru</a>
     <p>© Bittirkids. Все права защищены</p>
     <a href="http://gulfstream.bz/" target="_blank" class="gulf">Разработка сайта:</a>
+	</div>
   </footer>
   <div id="hidden-box">
     <div class="modal1" id="pop">

@@ -1,4 +1,14 @@
 $('<link rel=stylesheet type=text/css href=css/normalize.min.css><link rel=stylesheet type=text/css href=css/style.css>').appendTo('head');
+//мобильное устройство?
+var isMobile = false; 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+isMobile = true;
+}
+
+if (isMobile == true) {
+  $('.animation,.animation1,.animation2,.animation3,.animation4').addClass('animated');
+  $('<style>.animation,.animation,.animation1,.animation2,.animation3,.animation4 *{transition:0s all 0s!important;animation-duration:0s!important;animation-delay:0s!important}section .site-nav.down,section .site-nav.up{display:none!important}header{height:800px!important}footer p{margin: 20px 9% 0px;}</style>').appendTo('head');
+}
 var initalized = 0;
 function initalize(){
   
