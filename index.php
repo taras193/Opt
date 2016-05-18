@@ -651,6 +651,7 @@
     </div>
   </section>
   <section class="maps">
+  <h2>Карта</h2>
     <div class="map_t"></div>
     <div id="map"></div>
     <div class="map_b"></div>

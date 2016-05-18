@@ -441,7 +441,7 @@
           <div class="img"> <img src="img/buy/shir5.png" alt="Майка"> </div>
           <p>Майка</p>
           <span>от 35 р/шт</span>
-          <div c1lass="btn btn_zz2">Заказать</div>
+          <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 70 
             <br> р/шт
           </div>
@@ -611,6 +611,7 @@
     </div>
   </section>
   <section class="maps">
+  <h2>Карта</h2>
     <div class="map_t"></div>
     <div id="map"></div>
     <div class="map_b"></div>

@@ -143,7 +143,7 @@ input:focus{border:1px solid #cba575}
 #map{height:1005px;width:100%;z-index:1}
 .pointer{position:absolute;background:url(../img/pointer.png) no-repeat top center;width:491px;height:421px;top:33%;left:39%}
 footer{text-align:center;/* letter-spacing:159px; */margin-bottom:5px;z-index: 1;font-size: 0;overflow: hidden;}
-footer p{display:inline-block;letter-spacing:normal;color:#333;font-family:MuseoSansCyrl,sans-serif;font-size:16px;width:245px;vertical-align:top;margin: 20px 17% 0px;}
+footer p{display:inline-block;letter-spacing:normal;color:#333;font-family:MuseoSansCyrl,sans-serif;font-size:16px;width:245px;vertical-align:top;margin: 20px 12% 0px;}
 footer .btn_zz{display:inline-block;letter-spacing:normal;color:#333;font-family:MuseoSansCyrl,sans-serif;font-size:16px;width:160px;margin-right:68px;margin-top:20px;vertical-align: top;}
 .modal1{width:427px;height:467px;text-align:center}
 .test{background:#000;position:relative;height:800px}
@@ -240,4 +240,5 @@ footer .btn_zz{display:inline-block;letter-spacing:normal;color:#333;font-family
 .bg_sl.im5 .bgs5{z-index:1;-webkit-transition:all .25s;transition:all .25s;opacity:1}
 .bg_sl:before{width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.1);z-index:8;position:absolute}
 .bg_sl{width:100%;height:775px;position:absolute;top:0;left:0}
-.gulf{color:#333;font-size:16px;min-width: 228px!important;font-weight:400;line-height:22px;background:url(../img/gulf-logo.png) no-repeat bottom;min-height: 70px!important;padding-right:20px;text-align:right;letter-spacing:.7px;padding-top:0;display:inline-block;vertical-alig;vertical-align: top;
+.gulf{color:#333;font-size:16px;min-width: 228px!important;font-weight:400;line-height:22px;background:url(../img/gulf-logo.png) no-repeat bottom;min-height: 70px!important;padding-right:20px;text-align:right;letter-spacing:.7px;padding-top:0;display:inline-block;vertical-alig;vertical-align: top;}
+.maps h2 {display: none;}
