@@ -179,11 +179,10 @@
         <div class="clear"></div>
       </div>
       <div class="calc" data-step="1" data-var="3">
-        <h3 class="calc-h3">На какие объемы вы рассчитываете?</h3>
+        <h3 class="calc-h3">Что вас интересует?</h3>
         <div class="center">
           <div class="content2">
-            <div class="btn-big line-h" data-next-step="2">Товар под
-              <br> реализацию
+            <div class="btn-big" data-next-step="2">Дистрибьюция
             </div>
             <div class="btn-big line-h" data-next-step="2"> Закупка
               <br> товара
