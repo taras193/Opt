@@ -16,7 +16,7 @@
         <a href="#" class="logo"></a>
         <div class="btn btn_zz">Заказать звонок</div>
         <div class="clear"></div>
-        <div class="phone"><span class="lptracker_phone">8 800 505 14 76</span></div>
+        <div class="phone"><span class="lptracker_phone">+7 (800) 505-43-58</span></div>
       </div>
       <div class="label"></div>
       <div class="content">
@@ -326,46 +326,46 @@
         <div class="block animation">
           <div class="img"> <img src="img/buy/shirt1.png" alt="Сандали"> </div>
           <p>Сандали</p>
-          <span>от 230 р/шт</span>
+          <span>от 230 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 230
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"> <img src="img/buy/shirt2.png" alt="Слипоны"> </div>
           <p>Слипоны</p>
-          <span>от 250 р/шт</span>
+          <span>от 250 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 250
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"> <img src="img/buy/shirt3.png" alt="Кеды"> </div>
           <p>Кеды</p>
-          <span>от 165 р/шт</span>
+          <span>от 165 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 165
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"><img src="img/buy/shirt4.png" alt="Туфли"> </div>
           <p>Туфли</p>
-          <span>от 175 р/шт</span>
+          <span>от 400 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
-          <div class="label-top">от 175
-            <br> р/шт
+          <div class="label-top">от 400
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"> <img src="img/buy/shirt5.png" alt="Сапоги"> </div>
           <p>Сапоги</p>
-          <span>от 450 р/шт</span>
+          <span>от 450 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 450
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
@@ -373,28 +373,28 @@
             <img src="img/buy/shirt6.png" alt="Ботинки">
           </div>
           <p>Ботинки</p>
-          <span>от 265 р/шт</span>
+          <span>от 265 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 265
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"> <img src="img/buy/shirt7.png" alt="Пляжная"> </div>
           <p>Пляжная</p>
-          <span>от 130 р/шт</span>
+          <span>от 130 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 130
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"> <img src="img/buy/shirt8.png" alt="Кроссовки"> </div>
           <p>Кроссовки</p>
-          <span>от 390 р/шт</span>
+          <span>от 390 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 390
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
       </div>
@@ -402,46 +402,46 @@
         <div class="block animation">
           <div class="img"> <img src="img/buy/shir1.png" alt="Босоножки"> </div>
           <p>Босоножки</p>
-          <span>от 160 р/шт</span>
+          <span>от 160 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 160 
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"> <img src="img/buy/shir2.png" alt="Слипоны"> </div>
           <p>Слипоны</p>
-          <span>от 250 р/шт</span>
+          <span>от 250 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 250 
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"> <img src="img/buy/shir3.png" alt="Сандалики"> </div>
           <p>Сандалики</p>
-          <span>от 230 р/шт</span>
+          <span>от 230 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 230 
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"><img src="img/buy/shir4.png" alt="Туфельки"> </div>
           <p>Туфельки</p>
-          <span>от 180 р/шт</span>
+          <span>от 180 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 180 
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"> <img src="img/buy/shir5.png" alt="Сапоги"> </div>
           <p>Сапоги</p>
-          <span>от 450 р/шт</span>
+          <span>от 450 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 450 
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
@@ -449,28 +449,28 @@
             <img src="img/buy/shir6.png" alt="Балетки">
           </div>
           <p>Балетки</p>
-          <span>от 190 р/шт</span>
+          <span>от 190 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 190  
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"> <img src="img/buy/shir7.png" alt="Пляжная"> </div>
           <p>Пляжная</p>
-          <span>от 130 р/шт</span>
+          <span>от 130 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 130 
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
         <div class="block animation">
           <div class="img"> <img src="img/buy/shir8.png" alt="Кроссовки"> </div>
           <p>Кроссовки</p>
-          <span>от 390 р/шт</span>
+          <span>от 390 р/пара</span>
           <div class="btn btn_zz2">Заказать</div>
           <div class="label-top">от 390 
-            <br> р/шт
+            <br> р/пара
           </div>
         </div>
       </div>
@@ -480,7 +480,7 @@
   </section>
   <section class="sec4" id="sec4">
     <div class="wrapper">
-      <h2>О нашей текстильной<br> фабрике
+      <h2>О нашей обувной<br> фабрике
 в цифрах</h2>
       <div class="content">
         <div class="trig left"> <img src="img/sec4-ico1.png" alt="ico">
@@ -547,7 +547,7 @@
        <a href="#sec6" class="arrow view mouse">Смотрите далее</a>
     </div>
   </section>
-  <section class="sec6" id="sec6">
+  <!--section class="sec6" id="sec6">
     <div class="wrapper">
       <h2> Наше производство</h2>
       <div class="sliderg">
@@ -595,19 +595,19 @@
             <span>Производство<br>
   в Better for kids</span>
           </a>
-          <a href="#" class="item" data-slide-index="4">
+          <!--<a href="#" class="item" data-slide-index="4">
             <div class="bl">
               <img src="img/galery/slid6.jpg" alt="" class="img">
               <p></p>
             </div>
             <span>Производство<br>
   в Better for kids</span>
-          </a>
+          </a>-->
         </div>
 </div>
       <a href="#map" class="arrow view mouse">Смотрите далее</a>
     </div>
-  </section>
+  </section-->
   <section class="maps">
   <h2>Карта</h2>
     <div class="map_t"></div>
@@ -667,6 +667,9 @@
         </div>
         <div class="clear"></div>
       </div>
+    </div>
+    <div class="modal3" id="error">
+        <div class="center"></div>
     </div>
   </div>
 <script type=text/javascript src=js/jquery-2.1.1.min.js></script>

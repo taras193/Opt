@@ -242,3 +242,5 @@ footer .btn_zz{display:inline-block;letter-spacing:normal;color:#333;font-family
 .bg_sl{width:100%;height:775px;position:absolute;top:0;left:0}
 .gulf{color:#333;font-size:16px;min-width: 228px!important;font-weight:400;line-height:22px;background:url(../img/gulf-logo.png) no-repeat bottom;min-height: 70px!important;padding-right:20px;text-align:right;letter-spacing:.7px;padding-top:0;display:inline-block;vertical-alig;vertical-align: top;}
 .maps h2 {display: none;}
+.modal3{padding: 30px;background:#fff;text-align:center;border-radius: 20px;}
+.modal3 .center{color:#333;font-size:20px;font-weight:700;letter-spacing:normal;}

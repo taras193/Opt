@@ -132,7 +132,44 @@ function getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + 
 
     $('form').submit(function(e){
         e.preventDefault();
-        $(this).find('input[type="text"]').trigger('blur');
+        $(this).find('input[type="text"]').trigger('blur');        
+            var name=$(this).find('input[name="name"]').val();
+            var phone=$(this).find('input[name="phone"]').val();
+            if ($(this).find('input[name="email"]').length > 0) {
+              var email=$(this).find('input[name="email"]').val();
+            }else{
+              var email = 'noreply@for.test';
+            }
+         if((!validateEmail(email))&&($.trim(name) == '' || name == null || name == undefined) && ($.trim(phone) == '' || phone == null || phone == undefined || phone == '+7  ' || phone.length != 18))
+        {
+          $('#error .center').html("Пожалуйста, заполните все поля");
+          $('#error').arcticmodal();
+        }
+        else if(($.trim(phone) == '' || phone == null || phone == undefined || phone == '+7  ' || phone.length != 18)&&(!validateEmail(email)))
+        {
+          $('#error .center').html("Пожалуйста, введите номер Вашего телефона и email");
+          $('#error').arcticmodal();
+        } 
+        else if(($.trim(name) == '' || name == null || name == undefined)&&(!validateEmail(email)))
+        {
+          $('#error .center').html("Пожалуйста, введите имя и email");
+          $('#error').arcticmodal();
+        } 
+        else if (($.trim(name) == '' || name == null || name == undefined) && ($.trim(phone) == '' || phone == null || phone == undefined || phone == '+7  ' || phone.length != 18))
+        {
+          $('#error .center').html("Пожалуйста, введите Ваши имя и телефон");
+          $('#error').arcticmodal();
+        }
+        else if($.trim(name) == '' || name == null || name == undefined)
+        {
+          $('#error .center').html("Пожалуйста, введите Ваше имя");
+          $('#error').arcticmodal();
+        }
+        else if($.trim(phone) == '' || phone == null || phone == undefined || phone == '+7  ' || phone.length != 18)
+        {
+          $('#error .center').html("Пожалуйста, введите номер Вашего телефона");
+          $('#error').arcticmodal();
+        } 
         if(!$(this).find('input[type="text"]').hasClass('error-input')){
             var type=$(this).attr('method');
             var url=$(this).attr('action');

@@ -265,3 +265,5 @@ footer a{display:inline-block;letter-spacing:normal;color:#333;font-family:Museo
 .modal1{width:427px;height:332px;text-align:center}
 .gulf{color:#333;font-size:16px;min-width:228px;font-weight:400;line-height:22px;background:url(../img/gulf-logo.png) no-repeat bottom;min-height:70px;padding-right:20px;text-align:right;letter-spacing:.7px;padding-top:0;display:inline-block;vertical-align:top}
 .maps h2 {display: none;}
+.modal3{padding: 30px;background:#fff;text-align:center;border-radius: 20px;}
+.modal3 .center{color:#333;font-size:20px;font-weight:700;letter-spacing:normal;}
